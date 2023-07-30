@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc68326b2c.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            
+        </div>
+        <div class="navigation">
+            <ul>
+                <li class="list"><a href="index.html">Home</a> </li>
+                <li class="list"><a href="service.html">Services</a> </li>
+                <li class="list"><a href="contact.html">contact us</a></li>
+                <li class="list"><a href="about.html">About Us</a></li>
+                <li class="btns"><a href="service.html">Enroll now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 style="text-align: center;">
+    ABOUT US </h1> 
+    <span style="text-align: center;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente voluptatibus iure praesentium libero atque labore. Quas rerum fuga laborum quidem nam inventore labore veritatis culpa, sint, temporibus deserunt fugit tempora quis asperiores nobis dolores voluptatem dolorum consequatur quam dignissimos itaque optio repellat. Maxime, natus tempore aperiam rem hic dicta ipsa qui quam officiis veritatis. Totam eveniet doloribus asperiores a laudantium ipsa facilis minus itaque, accusamus optio dolor tempore perferendis, suscipit quibusdam cupiditate saepe, perspiciatis qui quidem provident quam! Pariatur nobis deserunt aliquam tenetur magnam incidunt consectetur praesentium excepturi quo harum non est illum, doloribus exercitationem dolorem ipsa. Laudantium, aperiam?
+    </span>   
+    <div class="feed">
+    <h2>Contact Us</h2>
+    <form name="google-sheet" method="POST">
+        <input type="text" placeholder="Name" name="Name"><br>
+        <input type="email" name="Email" placeholder="Email ID"><br>
+        <input type="number" name="number" placeholder="Contact Number"><br>
+        <textarea name="query" id="feedb" cols="30" rows="10" placeholder="Write Your query"></textarea><br>
+        <button type="submit" >submit</button><br>
+    </form>
+
+</div>
+
+<footer>
+    <div class="pages">
+        <h3>PAGES</h3>
+        <a href="about.html">About us</a>|
+        <a href="service.html">Services</a>|
+        <a href="#">Blogs</a>|
+        <a href="#">Login/sign up</a>
+    </div>
+    <div class="doc">
+        <h3>Document</h3>
+        <a href="#">Privacy policy</a>|<a href="#">Terms and Conditions</a>
+    </div>
+    <div class="social">
+        <h3>Follow US on </h3>
+        <a href="https://www.facebook.com/harsh.koshti.399/" target="_blank"><i class="fa-brands fa-facebook"></i></a>|
+        <a href="https://www.linkedin.com/in/harsh-koshti-288634203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>|
+        <a href="https://www.instagram.com/mr_harsh_koshti_/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <br>
+    <div class="copy">
+        <span>copyright &copy; All Rights Are Reserved tech </span>
+    </div>
+
+</footer>
+
+
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDFl9mc91770QCSHiwlwNPlG5kR132NyFBn_nFv8OCiorxA8MnQjeWO2EWTZALpoZ0/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script> 
+</body>
+</html>    

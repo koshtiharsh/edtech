@@ -1,0 +1,188 @@
+
+
+/* navabar  */
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+
+#navbar::before{
+    content: " ";
+    position: absolute;
+    background: rgb(216, 36, 36) ;
+    width:100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+#navbar .logo{
+
+    width: 40%;
+    height: 100px;
+}
+#navbar .logo h4{
+    text-align: center;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar .logo img{
+    width: 30%;
+    height: 120px;
+   
+}
+#navbar .navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    
+
+}
+#navbar .navigation .btns{
+    list-style: none;
+    text-align: center;
+    margin: 30px;
+    padding: 3px;
+    font-weight: bold;
+    font-family: 'Water Brush', cursive;
+    font-family: 'Water Brush', cursive;
+    color: white;
+    font-size: 25px;
+    
+    background-color: rgb(58, 148, 238);
+    border-radius: 30px;
+    transition: 1s;
+   }
+#navbar .navigation .btns a{
+    text-decoration: none;
+    color: white;
+}   
+#navbar .navigation .btns:hover{
+    background: black;
+    color: white;
+    /* border: solid black 4px; */
+    border-bottom: 4px solid gold;
+    border-radius: 20px;
+    transition: 1sec;
+}
+#navbar .navigation .list{
+    list-style: none;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    font-family: 'Water Brush', cursive;
+    color: white;
+    font-size: 5px;
+    padding: 5px;
+    
+    
+    
+}
+#navbar .navigation .list a{
+    text-decoration: none;
+    color: white;
+}
+#navbar .navigation .list:hover{
+   
+    background-color: rgb(58, 148, 238);
+    border-radius: 30px;
+   
+}
+
+/* home page  */
+#home::before{
+    content: " ";
+    position: absolute;
+    background: url(back.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .8;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    
+    height: 1080px;
+    
+}
+/* #home .header{
+    align-items: right;
+    justify-content: right;
+    
+} */
+#home h1{
+    float: right;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Water Brush', cursive;;
+    color: white;
+    
+
+}
+#home p{
+    margin:10px;
+    width: 50%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    font-family: 'Water Brush', cursive;
+    color: white;
+    font-size: 20px;
+}
+#home .btn button{
+    
+   float: right;
+   
+   margin-top: 30px;
+   padding: 5px;
+   margin-right: 250px;
+   font-weight: bold;
+    font-family: 'Water Brush', cursive;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    background-color: rgb(58, 148, 238);
+    border-radius: 30px;
+
+   
+    
+
+}
+
+#home .btn button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Water Brush', cursive;
+    
+}
+#home p:hover{
+    color: red;
+}
+#home .btn button:hover{
+    
+    
+    background: black;
+    color: white;
+    /* border: solid black 4px; */
+    border-bottom: 4px solid gold;
+    border-radius: 20px;
+    transition: 1s;
+     
+ 
+ }
+ #home .btn button a:hover{
+     color: white;
+     transition: 1s;
+ }
